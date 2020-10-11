@@ -1,16 +1,20 @@
-@use 'base';
-@use 'variables';
-@use 'colors';
-@use 'typography';
+@use 'utilities/variables';
+@use 'utilities/mixins';
+
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/colors';
+
+@use 'layouts/body';
+@use 'layouts/panels';
+@use 'layouts/summary';
+@use 'layouts/archives';
+
+@use 'components/rocket';
+
 
 /* ROCKET */
-// .extra1 {
-//     content: "";
-//     position: fixed;
-//     right: 10%;
-//     top: 15%;
-//     border: 10px solid red;
-// }
+
 
 
 // .page-wrapper {

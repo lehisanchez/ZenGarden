@@ -1,0 +1,23 @@
+.page-wrapper {
+    position: inherit;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+[role="banner"],
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer,
+.design-selection {
+    height: 100vh;
+    scroll-snap-align: center;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    border: 10px solid yellow;
+    transform: rotate(-180deg);
+}
+

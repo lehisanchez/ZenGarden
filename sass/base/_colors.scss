@@ -1,0 +1,14 @@
+@use '../utilities/variables';
+
+body {
+    color: variables.$purple-100;
+    background-color: variables.$purple-500;
+}
+
+a {
+    color: variables.$purple-300;
+}
+
+a:hover {
+    color: variables.$purple-200;
+}

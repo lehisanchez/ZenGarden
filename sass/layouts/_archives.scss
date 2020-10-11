@@ -1,0 +1,13 @@
+@use '../utilities/variables';
+
+.wrapper,.sidebar {
+    position: inherit;
+}
+
+#design-archives {
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    transform: rotate(-180deg);
+    border: 1px solid variables.$purple-100;
+}
