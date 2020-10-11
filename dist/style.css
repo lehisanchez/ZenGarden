@@ -1,18 +1,28 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |     color: $purple-100;
- *   |            ^^^^^^^^^^^
- *   '
- *   src/colors.scss 2:12  @use
- *   src/style.scss 3:1    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      color: $purple-100;\a   \2502             ^^^^^^^^^^^\a   \2575 \a   src/colors.scss 2:12  @use\a   src/style.scss 3:1    root stylesheet";
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap");
+body {
+  color: #E8C1C5;
+  background-color: #011638;
 }
+
+a {
+  color: #9055A2;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* ROCKET */
+
+/*# sourceMappingURL=style.css.map */
