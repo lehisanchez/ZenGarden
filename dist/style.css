@@ -384,7 +384,8 @@ body {
 .benefits,
 .requirements,
 footer,
-.design-selection {
+.design-selection,
+.zen-resources {
   height: 100vh;
   scroll-snap-align: center;
   overflow-y: scroll;
