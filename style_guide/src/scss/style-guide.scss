@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap');
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #5f8ee4; // Cornflower Blue - Action color
-$color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Red
-$color-4: #e6e6e6; // light grey
+$color-1: #011638; // Cornflower Blue - Action color
+$color-2: #2e294e; // Dark Blue
+$color-3: #9055a2; // Red
+$color-4: #d499b9; // light grey
 $color-5: #ffffff; // white
+$color-6: #e8c1c5;
 
 // additional colors
 
@@ -16,8 +18,8 @@ $success: #6fce72; // green
 $alert: $color-3; // red
 
 // fonts
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Orbitron', monospace;
 
 /* -------------------------------- 
 
@@ -57,8 +59,8 @@ header {
 
 .cd-logo {
   /* logo box style */
-  background-color: $color-1;
-  width: 120px;
+  background-color: $color-2;
+  width: 100px;
 
   @include MQ(M) {
     width: 180px;
