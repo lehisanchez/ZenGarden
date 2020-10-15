@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap');
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
-@import 'partials/layout'; // responsive grid and media queries
+@import 'partials/layout';
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #011638; // Cornflower Blue - Action color
-$color-2: #2e294e; // Dark Blue
-$color-3: #9055a2; // Red
-$color-4: #d499b9; // light grey
-$color-5: #ffffff; // white
+$color-1: #011638;
+$color-2: #2e294e;
+$color-3: #9055a2;
+$color-4: #d499b9;
+$color-5: #ffffff;
 $color-6: #e8c1c5;
 
 // additional colors
-
 $success: #6fce72; // green
 $alert: $color-3; // red
 
@@ -52,8 +51,8 @@ xPatterns
 xNavigation 
 
 -------------------------------- */
-@import 'partials/navigation';
 
+@import 'partials/navigation';
 
 /* -------------------------------- 
 
@@ -75,6 +74,7 @@ main > h1 {
 xTypography 
 
 -------------------------------- */
+
 @import 'partials/typography';
 
 /* -------------------------------- 
@@ -82,6 +82,7 @@ xTypography
 xButtons 
 
 -------------------------------- */
+
 @import 'partials/buttons';
 
 /* -------------------------------- 
@@ -89,6 +90,7 @@ xButtons
 xIcons 
 
 -------------------------------- */
+
 @import 'partials/icons';
 
 
@@ -97,8 +99,13 @@ xIcons
 xForm 
 
 -------------------------------- */
+
 @import 'partials/form';
 
+/* -------------------------------- 
 
+Basic Styles 
+
+-------------------------------- */
 
 @import 'partials/basic-style';
