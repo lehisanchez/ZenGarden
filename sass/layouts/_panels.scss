@@ -6,13 +6,9 @@
 }
 
 [role="banner"],
-.explanation,
-.participation,
-.benefits,
-.requirements,
-footer,
-.design-selection,
-.zen-resources {
+.intro,
+.main,
+.sidebar {
     height: 100vh;
     scroll-snap-align: center;
     overflow-y: scroll;
