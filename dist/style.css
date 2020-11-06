@@ -407,7 +407,12 @@ footer,
   height: 90vw;
   width: 96vw;
   position: absolute;
-  top: -45vw;
+  top: -75vw;
+}
+@media (max-width: 1100px) {
+  .intro::after {
+    top: -65vw;
+  }
 }
 .intro header {
   text-align: center;

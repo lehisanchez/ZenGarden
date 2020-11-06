@@ -9,7 +9,10 @@
         height: 90vw;
         width: 96vw;
         position: absolute;
-        top: -45vw;
+        top: -75vw;
+        @media (max-width: 1100px) {
+            top: -65vw;
+        }
     }
     header {
         text-align: center;
