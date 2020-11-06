@@ -553,6 +553,12 @@ footer,
   padding: 50%;
 }
 
+.zen-resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .wrapper, .sidebar {
   position: inherit;
 }
