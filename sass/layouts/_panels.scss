@@ -6,9 +6,10 @@
 }
 
 [role="banner"],
-.intro,
 .main,
-.sidebar {
+footer,
+.design-selection,
+.zen-resources {
     height: 100vh;
     scroll-snap-align: center;
     overflow-y: scroll;

@@ -1,33 +1,34 @@
 .main {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     .explanation {
-        position: absolute;
-        transform: rotate(180deg);
+ 
+
         text-align: center;
         background: url("../sass/assets/jupiter.svg") no-repeat center;
-        top: 50vh;
-        width: 400px;
-        right: 60%;
+   
     }
     .participation {
-        position: absolute;
-        transform: rotate(180deg);
+ 
+   
         text-align: center;
         background: url("../sass/assets/saturn.svg") no-repeat center;
     }
     .benefits {
-        position: absolute;
-        transform: rotate(180deg);
+
+    
         text-align: center;
         background: url("../sass/assets/uranus.svg") no-repeat center;
     }
     .requirements {
-        position: absolute;
-        transform: rotate(180deg);
+
+    
         text-align: center;
         background: url("../sass/assets/mercury.svg") no-repeat center;
-        bottom: 0;
-        right: 10%;
-        width: 350px;
+
     }
 
 }
