@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@500;900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -427,10 +427,16 @@ footer,
   top: 50vh;
   right: 60%;
   width: 200px;
-  padding: 10px;
+  padding: 40px 20px;
   transform: rotate(-180deg);
-  border: 1px solid #E8C1C5;
-  background: url("../sass/assets/venus.svg") no-repeat;
+  background: url("../sass/assets/venus.svg") no-repeat center;
+  text-align: center;
+  color: #011638;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.intro p:last-of-type {
+  display: none;
 }
 
 .wrapper, .sidebar {

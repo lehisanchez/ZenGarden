@@ -30,9 +30,15 @@
         top: 50vh;
         right: 60%;
         width: 200px;
-        padding: 10px;
+        padding: 40px 20px;
         transform: rotate(-180deg);
-        border: 1px solid variables.$purple-100;
-        background: url("../sass/assets/venus.svg") no-repeat;
+        background: url("../sass/assets/venus.svg") no-repeat center;
+        text-align: center;
+        color: variables.$purple-500;
+        font-weight: 900;
+        font-size: 1.1rem;
+    }
+    p:last-of-type {
+        display: none;
     }
 }
