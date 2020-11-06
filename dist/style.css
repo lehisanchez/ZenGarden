@@ -354,7 +354,6 @@ h6 {
 
 body {
   color: #E8C1C5;
-  background-color: #011638;
 }
 
 a {
@@ -363,6 +362,11 @@ a {
 
 a:hover {
   color: #D499B9;
+}
+
+html {
+  background: url("../sass/assets/space.jpg");
+  background-size: cover;
 }
 
 body {
@@ -418,9 +422,11 @@ footer,
   position: fixed;
   right: 10%;
   top: 15%;
-  border: 10px solid red;
+  height: 175px;
+  width: 100px;
+  background: url("../sass/assets/rocketship.svg");
+  background-size: cover;
+  transform: rotate(180deg);
 }
-
-/* ROCKET */
 
 /*# sourceMappingURL=style.css.map */

@@ -2,5 +2,11 @@
     position: fixed;
     right: 10%;
     top: 15%;
-    border: 10px solid red;
+    height: 175px;
+    width: 100px;
+    background: url("../sass/assets/rocketship.svg");
+    background-size: cover;
+    transform: rotate(180deg);
 }
+
+

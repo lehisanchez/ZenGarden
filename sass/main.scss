@@ -9,27 +9,6 @@
 @use 'layouts/panels';
 @use 'layouts/summary';
 @use 'layouts/archives';
-
 @use 'components/rocket';
 
 
-/* ROCKET */
-
-
-
-// .page-wrapper {
-//     height: 100vh;
-//     overflow-y: scroll;
-//     scroll-snap-type: y mandatory;
-// }
-
-// [role="banner"],.summary, .preamble {
-//     content: "";
-//     height: 100vh;
-//     width: 100%;
-//     scroll-snap-align: center;
-//     overflow-y: scroll;
-//     scroll-snap-type: y mandatory;
-//     border: 1px solid yellow;
-//     transform: rotate(-180deg);
-// }
