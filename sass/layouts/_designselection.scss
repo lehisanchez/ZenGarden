@@ -1,0 +1,65 @@
+.design-selection {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    
+    h3 {
+        align-self: center;
+        background: url("../sass/assets/meteor1.svg") no-repeat center;
+        height: 100px;
+        padding: 5px;
+    }
+    li{
+       margin: 3rem;
+       list-style: none;
+    }
+    li:nth-child(1) {
+        background: url("../sass/assets/meteor1.svg") no-repeat center;
+        height: 50px;
+        text-align: center;
+        padding: 50%;
+    }
+    li:nth-child(2) {
+        background: url("../sass/assets/meteor2.svg") no-repeat center;
+        height: 100px;
+        text-align: center;
+        padding: 50%;
+    }
+    li:nth-child(3) {
+        background: url("../sass/assets/meteor3.svg") no-repeat center;
+        height: 100px;
+        text-align: center;
+        padding: 50%;
+    }
+    li:nth-child(4) {
+        background: url("../sass/assets/meteor4.svg") no-repeat center;
+        height: 100px;
+        text-align: center;
+        padding: 50%;
+    }
+    li:nth-child(5) {
+        background: url("../sass/assets/meteor5.svg") no-repeat center;
+        height: 100px;
+        text-align: center;
+        padding: 50%;
+    }
+    li:nth-child(6) {
+        background: url("../sass/assets/meteor6.svg") no-repeat center;
+        height: 100px;
+        text-align: center;
+        padding: 50%;
+    }
+    li:nth-child(7) {
+        background: url("../sass/assets/meteor1.svg") no-repeat center;
+        height: 100px;
+        text-align: center;
+        padding: 50%;
+    }
+    li:nth-child(8) {
+        background: url("../sass/assets/meteor2.svg") no-repeat center;
+        height: 50px;
+        text-align: center;
+        padding: 50%;
+    }
+}
