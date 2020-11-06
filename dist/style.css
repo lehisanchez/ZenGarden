@@ -382,7 +382,6 @@ body {
 }
 
 [role=banner],
-.preamble,
 .explanation,
 .participation,
 .benefits,
@@ -398,6 +397,9 @@ footer,
   transform: rotate(-180deg);
 }
 
+.intro {
+  transform: rotate(0deg);
+}
 .intro::after {
   content: "";
   background: url(../sass/assets/earth.svg) no-repeat;
@@ -435,8 +437,26 @@ footer,
   font-weight: 900;
   font-size: 1.1rem;
 }
-.intro p:last-of-type {
+.intro .summary p:last-of-type {
   display: none;
+}
+.intro .preamble {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 350px;
+  padding: 86px 20px;
+  transform: rotate(-180deg);
+  background: url("../sass/assets/mars.svg") no-repeat center;
+  text-align: center;
+  color: #E8C1C5;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.intro .preamble p {
+  text-align: left;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
 }
 
 .wrapper, .sidebar {
