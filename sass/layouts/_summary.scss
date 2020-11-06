@@ -1,9 +1,0 @@
-@use '../utilities/variables';
-
-.summary {
-    position: absolute;
-    top: 0px;
-    padding: 10px;
-    transform: rotate(-180deg);
-    border: 1px solid variables.$purple-100;
-}
