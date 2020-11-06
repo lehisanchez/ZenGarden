@@ -21,12 +21,18 @@
             bottom: 25%;
             left: calc(40vw/2 + 15px);
         }
+        h2 {
+            display: none;
+        }
     }
     .summary {
         position: absolute;
-        top: 0px;
+        top: 50vh;
+        right: 60%;
+        width: 200px;
         padding: 10px;
         transform: rotate(-180deg);
         border: 1px solid variables.$purple-100;
+        background: url("../sass/assets/venus.svg") no-repeat;
     }
 }

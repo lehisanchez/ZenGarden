@@ -353,7 +353,7 @@ h6 {
 }
 
 body {
-  color: #E8C1C5;
+  color: white;
 }
 
 a {
@@ -419,12 +419,18 @@ footer,
   bottom: 25%;
   left: calc(40vw/2 + 15px);
 }
+.intro header h2 {
+  display: none;
+}
 .intro .summary {
   position: absolute;
-  top: 0px;
+  top: 50vh;
+  right: 60%;
+  width: 200px;
   padding: 10px;
   transform: rotate(-180deg);
   border: 1px solid #E8C1C5;
+  background: url("../sass/assets/venus.svg") no-repeat;
 }
 
 .wrapper, .sidebar {
