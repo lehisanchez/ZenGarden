@@ -398,14 +398,6 @@ footer,
   transform: rotate(-180deg);
 }
 
-.summary {
-  position: absolute;
-  top: 0px;
-  padding: 10px;
-  transform: rotate(-180deg);
-  border: 1px solid #E8C1C5;
-}
-
 .intro::after {
   content: "";
   background: url(../sass/assets/earth.svg) no-repeat;
@@ -414,6 +406,25 @@ footer,
   width: 96vw;
   position: absolute;
   top: -45vw;
+}
+.intro header {
+  text-align: center;
+}
+.intro header h1 {
+  background: black;
+  display: inline-block;
+  padding: 2rem;
+  position: absolute;
+  width: 40vw;
+  bottom: 25%;
+  left: calc(40vw/2 + 15px);
+}
+.intro .summary {
+  position: absolute;
+  top: 0px;
+  padding: 10px;
+  transform: rotate(-180deg);
+  border: 1px solid #E8C1C5;
 }
 
 .wrapper, .sidebar {

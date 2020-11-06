@@ -1,19 +1,32 @@
 @use '../utilities/variables';
 
-.summary {
-    position: absolute;
-    top: 0px;
-    padding: 10px;
-    transform: rotate(-180deg);
-    border: 1px solid variables.$purple-100;
-}
-
-.intro::after {
-    content: "";
-    background: url(../sass/assets/earth.svg) no-repeat;
-    transform: rotate(180deg);
-    height: 90vw;
-    width: 96vw;
-    position: absolute;
-    top: -45vw;
+.intro {
+    &::after {
+        content: "";
+        background: url(../sass/assets/earth.svg) no-repeat;
+        transform: rotate(180deg);
+        height: 90vw;
+        width: 96vw;
+        position: absolute;
+        top: -45vw;
+    }
+    header {
+        text-align: center;
+        h1 {
+            background: black;
+            display: inline-block;
+            padding: 2rem;
+            position: absolute;
+            width: 40vw;
+            bottom: 25%;
+            left: calc(40vw/2 + 15px);
+        }
+    }
+    .summary {
+        position: absolute;
+        top: 0px;
+        padding: 10px;
+        transform: rotate(-180deg);
+        border: 1px solid variables.$purple-100;
+    }
 }
