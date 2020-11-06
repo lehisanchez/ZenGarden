@@ -382,13 +382,9 @@ body {
 }
 
 [role=banner],
-.explanation,
-.participation,
-.benefits,
-.requirements,
-footer,
-.design-selection,
-.zen-resources {
+.intro,
+.main,
+.sidebar {
   height: 100vh;
   scroll-snap-align: center;
   overflow-y: scroll;
@@ -431,13 +427,13 @@ footer,
 }
 .intro .summary {
   position: absolute;
+  transform: rotate(180deg);
+  text-align: center;
   top: 50vh;
   right: 60%;
   width: 200px;
   padding: 40px 20px;
-  transform: rotate(-180deg);
   background: url("../sass/assets/venus.svg") no-repeat center;
-  text-align: center;
   color: #011638;
   font-weight: 900;
   font-size: 1.1rem;
@@ -447,13 +443,13 @@ footer,
 }
 .intro .preamble {
   position: absolute;
+  transform: rotate(180deg);
+  text-align: center;
   bottom: 0;
   right: 10%;
   width: 350px;
   padding: 86px 20px;
-  transform: rotate(-180deg);
   background: url("../sass/assets/mars.svg") no-repeat center;
-  text-align: center;
   color: #E8C1C5;
   font-weight: 500;
   font-size: 0.8rem;
@@ -462,6 +458,37 @@ footer,
   text-align: left;
   padding-left: 1.5rem;
   padding-right: 1rem;
+}
+
+.main .explanation {
+  position: absolute;
+  transform: rotate(180deg);
+  text-align: center;
+  background: url("../sass/assets/jupiter.svg") no-repeat center;
+  top: 50vh;
+  width: 400px;
+  right: 60%;
+}
+.main .participation {
+  position: absolute;
+  transform: rotate(180deg);
+  text-align: center;
+  background: url("../sass/assets/saturn.svg") no-repeat center;
+}
+.main .benefits {
+  position: absolute;
+  transform: rotate(180deg);
+  text-align: center;
+  background: url("../sass/assets/uranus.svg") no-repeat center;
+}
+.main .requirements {
+  position: absolute;
+  transform: rotate(180deg);
+  text-align: center;
+  background: url("../sass/assets/mercury.svg") no-repeat center;
+  bottom: 0;
+  right: 10%;
+  width: 350px;
 }
 
 .wrapper, .sidebar {
