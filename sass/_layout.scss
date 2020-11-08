@@ -1,0 +1,21 @@
+/// TOP STYLES
+
+html {
+    background: url("assets/space.jpg");
+    background-size: cover;
+}
+
+body {
+    position: relative;
+    transform: rotate(-180deg);
+}
+
+p {
+    padding: 1rem;
+}
+
+/// WE ELECTED TO HIDE THE DESIGN ARCHIVES
+/// --------------------------------------
+.design-archives {
+    display: none;
+}

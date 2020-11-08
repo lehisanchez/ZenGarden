@@ -352,8 +352,16 @@ h6 {
   letter-spacing: 0.05em;
 }
 
-body {
+p {
+  line-height: 2em;
+}
+
+* {
   color: white;
+}
+
+p {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 a {
@@ -364,14 +372,26 @@ a:hover {
   color: #D499B9;
 }
 
+.summary {
+  color: #011638;
+}
+
+.preamble {
+  color: #E8C1C5;
+}
+
 html {
-  background: url("../sass/assets/space.jpg");
+  background: url("assets/space.jpg");
   background-size: cover;
 }
 
 body {
   position: relative;
   transform: rotate(-180deg);
+}
+
+p {
+  padding: 1rem;
 }
 
 .design-archives {
@@ -385,190 +405,190 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-[role=banner],
-.main,
+.intro header,
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
 footer,
 .design-selection,
 .zen-resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
   height: 100vh;
   scroll-snap-align: center;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  border: 10px solid yellow;
   transform: rotate(-180deg);
 }
 
-.intro {
-  transform: rotate(0deg);
-}
-.intro::after {
-  content: "";
-  background: url(../sass/assets/earth.svg) no-repeat;
-  transform: rotate(180deg);
-  height: 90vw;
-  width: 96vw;
-  position: absolute;
-  top: -75vw;
-}
-@media (max-width: 1100px) {
-  .intro::after {
-    top: -65vw;
-  }
-}
 .intro header {
-  text-align: center;
+  background: url(assets/earth.svg) no-repeat;
+  background-attachment: fixed;
+  background-position: center 75vh;
+  background-size: cover;
 }
 .intro header h1 {
-  background: black;
-  display: inline-block;
+  text-align: center;
   padding: 2rem;
-  position: absolute;
-  width: 40vw;
-  bottom: 25%;
-  left: calc(40vw/2 + 15px);
+  background: black;
 }
 .intro header h2 {
   display: none;
 }
-.intro .summary {
-  position: absolute;
-  transform: rotate(180deg);
-  text-align: center;
-  top: 50vh;
-  right: 60%;
-  width: 200px;
-  padding: 40px 20px;
-  background: url("../sass/assets/venus.svg") no-repeat center;
-  color: #011638;
-  font-weight: 900;
-  font-size: 1.1rem;
+
+.summary {
+  background: url("assets/venus.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: 50%;
 }
-.intro .summary p:last-of-type {
+.summary p:last-of-type {
   display: none;
 }
-.intro .preamble {
-  position: absolute;
-  transform: rotate(180deg);
-  text-align: center;
-  bottom: 0;
-  right: 10%;
-  width: 350px;
-  padding: 86px 20px;
-  background: url("../sass/assets/mars.svg") no-repeat center;
-  color: #E8C1C5;
-  font-weight: 500;
-  font-size: 0.8rem;
-}
-.intro .preamble p {
-  text-align: left;
-  padding-left: 1.5rem;
-  padding-right: 1rem;
+
+.preamble {
+  background: url("assets/mars.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 50%;
 }
 
-.main {
+.explanation {
+  background: url("assets/jupiter.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: 60%;
+}
+
+.participation {
+  background: url("assets/saturn.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 80%;
+}
+
+.benefits {
+  background: url("assets/uranus.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: 50%;
+}
+
+.requirements {
+  background: url("assets/mercury.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 50%;
+}
+
+footer {
   display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.main .explanation {
-  text-align: center;
-  background: url("../sass/assets/jupiter.svg") no-repeat center;
+footer a {
+  color: white;
+  padding: 3rem;
+  background: url("assets/meteor1.svg") no-repeat center;
+  background-size: contain;
+  text-decoration: none;
 }
-.main .participation {
-  text-align: center;
-  background: url("../sass/assets/saturn.svg") no-repeat center;
-}
-.main .benefits {
-  text-align: center;
-  background: url("../sass/assets/uranus.svg") no-repeat center;
-}
-.main .requirements {
-  text-align: center;
-  background: url("../sass/assets/mercury.svg") no-repeat center;
+footer a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .design-selection {
   display: flex;
-  flex-direction: column-reverse;
-  align-content: flex-end;
-  flex-wrap: wrap;
+  align-content: center;
 }
 .design-selection h3 {
   align-self: center;
-  background: url("../sass/assets/meteor1.svg") no-repeat center;
-  height: 100px;
-  padding: 5px;
+  background: url("assets/meteor1.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
+}
+.design-selection ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .design-selection li {
-  margin: 3rem;
+  margin: 1rem;
   list-style: none;
 }
+.design-selection li a {
+  color: white;
+}
 .design-selection li:nth-child(1) {
-  background: url("../sass/assets/meteor1.svg") no-repeat center;
-  height: 50px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor1.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 .design-selection li:nth-child(2) {
-  background: url("../sass/assets/meteor2.svg") no-repeat center;
-  height: 100px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor2.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 .design-selection li:nth-child(3) {
-  background: url("../sass/assets/meteor3.svg") no-repeat center;
-  height: 100px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor3.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 .design-selection li:nth-child(4) {
-  background: url("../sass/assets/meteor4.svg") no-repeat center;
-  height: 100px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor4.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 .design-selection li:nth-child(5) {
-  background: url("../sass/assets/meteor5.svg") no-repeat center;
-  height: 100px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor5.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 .design-selection li:nth-child(6) {
-  background: url("../sass/assets/meteor6.svg") no-repeat center;
-  height: 100px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor6.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 .design-selection li:nth-child(7) {
-  background: url("../sass/assets/meteor1.svg") no-repeat center;
-  height: 100px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor1.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 .design-selection li:nth-child(8) {
-  background: url("../sass/assets/meteor2.svg") no-repeat center;
-  height: 50px;
-  text-align: center;
-  padding: 50%;
+  background: url("assets/meteor2.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
 
 .zen-resources {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
-
-.wrapper, .sidebar {
-  position: inherit;
+.zen-resources ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
 }
-
-#design-archives {
-  position: absolute;
-  top: 0px;
-  padding: 10px;
-  transform: rotate(-180deg);
-  border: 1px solid #E8C1C5;
+.zen-resources ul li {
+  background-color: black;
+  background: url("assets/star.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
+  text-decoration: none;
 }
 
 .extra1 {
@@ -577,9 +597,24 @@ footer,
   top: 15%;
   height: 175px;
   width: 100px;
-  background: url("../sass/assets/rocketship.svg");
+  background: url("assets/rocketship.svg");
   background-size: cover;
-  transform: rotate(180deg);
+  transform: rotate(192deg);
+}
+
+.extra1 {
+  animation: pulse 0.5s linear infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    width: 100px;
+    transform: rotate(192deg);
+  }
+  100% {
+    width: 102px;
+    transform: rotate(195deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

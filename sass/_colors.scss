@@ -1,0 +1,31 @@
+/// APPLY COLOR SCHEME TO HTML ELEMENTS
+
+$purple-100: #E8C1C5;
+$purple-200: #D499B9;
+$purple-300: #9055A2;
+$purple-400: #2E294E;
+$purple-500: #011638;
+
+* {
+    color: white;
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+    color: $purple-300;
+}
+
+a:hover {
+    color: $purple-200;
+}
+
+.summary {
+    color: $purple-500;
+}
+
+.preamble {
+    color: $purple-100;
+}

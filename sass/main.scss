@@ -1,17 +1,14 @@
-@use 'utilities/variables';
-@use 'utilities/mixins';
+// INITIAL STYLES
+@use 'normalize';
+@use 'typography';
+@use 'colors';
 
-@use 'base/reset';
-@use 'base/typography';
-@use 'base/colors';
+// LAYOUT
+@use 'layout';
+@use 'panels';
 
-@use 'layouts/body';
-@use 'layouts/panels';
-@use 'layouts/intro';
-@use 'layouts/main';
-@use 'layouts/designselection';
-@use 'layouts/zenResources';
-@use 'layouts/archives';
-@use 'components/rocket';
+// ROCKET
+@use 'rocket';
 
-
+// ANIMATION
+@use 'animation';
