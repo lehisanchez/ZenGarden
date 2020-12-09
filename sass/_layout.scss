@@ -1,7 +1,5 @@
-/// TOP STYLES
-
 html {
-    background: url("assets/space.jpg");
+    background: url("assets/space_new_180.jpg");
     background-size: cover;
 }
 
@@ -11,11 +9,24 @@ body {
 }
 
 p {
-    padding: 1rem;
+    // max-width: 600px;
+    padding: 0 3rem 0 3rem;
 }
 
-/// WE ELECTED TO HIDE THE DESIGN ARCHIVES
-/// --------------------------------------
-.design-archives {
-    display: none;
+div>p:first-of-type {
+    padding-top: 3rem;
 }
+
+div>p:last-of-type {
+    padding-bottom: 3rem;
+}
+
+// #zen-intro,
+// #zen-summary,
+// #zen-preamble,
+// #zen-explanation,
+// #zen-participation,
+// #zen-benefits,
+// #zen-requirements {
+//     display: none;
+// }

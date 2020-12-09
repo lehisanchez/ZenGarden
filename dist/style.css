@@ -1,341 +1,137 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@500;900&display=swap");
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@400;500;700;900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
 code,
+del,
+dfn,
+em,
+img,
+ins,
 kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+q,
+s,
+samp,
+small,
+strike,
+strong,
 sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
   padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
+body {
+  line-height: 1;
 }
 
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
+ol,
+ul {
+  list-style: none;
 }
 
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
@@ -349,11 +145,28 @@ h4,
 h5,
 h6 {
   font-family: "Orbitron", sans-serif;
+  font-weight: bold;
   letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 50px;
 }
 
 p {
-  line-height: 2em;
+  font-size: 0.9em;
+  text-indent: 1em;
+  line-height: 1.7em;
 }
 
 * {
@@ -365,11 +178,12 @@ p {
 }
 
 a {
-  color: #9055A2;
+  font-weight: semibold;
+  color: #D499B9;
 }
 
 a:hover {
-  color: #D499B9;
+  color: #E8C1C5;
 }
 
 .summary {
@@ -381,7 +195,7 @@ a:hover {
 }
 
 html {
-  background: url("assets/space.jpg");
+  background: url("assets/space_new_180.jpg");
   background-size: cover;
 }
 
@@ -391,11 +205,15 @@ body {
 }
 
 p {
-  padding: 1rem;
+  padding: 0 3rem 0 3rem;
 }
 
-.design-archives {
-  display: none;
+div > p:first-of-type {
+  padding-top: 3rem;
+}
+
+div > p:last-of-type {
+  padding-bottom: 3rem;
 }
 
 .page-wrapper {
@@ -405,177 +223,192 @@ p {
   scroll-snap-type: y mandatory;
 }
 
-.intro header,
-.summary,
-.preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements,
-footer,
-.design-selection,
-.zen-resources {
+#zen-intro header,
+#zen-summary,
+#zen-preamble,
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
+#zen-requirements,
+#zen-supporting footer,
+#design-selection,
+#design-archives,
+#zen-resources {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   position: relative;
-  height: 100vh;
-  scroll-snap-align: center;
+  height: 120vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
   transform: rotate(-180deg);
 }
 
-.intro header {
+/*
+PANELS:
+01 #zen-intro header,
+02 #zen-summary,
+03 #zen-preamble,
+04 #zen-explanation,
+05 #zen-participation,
+06 #zen-benefits,
+07 #zen-requirements,
+08 #zen-supporting footer,
+09 #design-selection,
+10 #design-archives,
+11 #zen-resources
+*/
+#zen-intro header {
   background: url(assets/earth.svg) no-repeat;
   background-attachment: fixed;
   background-position: center 75vh;
   background-size: cover;
+  z-index: -2;
 }
-.intro header h1 {
+
+#zen-intro header h1 {
   text-align: center;
   padding: 2rem;
   background: black;
 }
-.intro header h2 {
+
+#zen-intro header h2 {
   display: none;
 }
 
-.summary {
+#zen-summary {
   background: url("assets/venus.svg") no-repeat center;
   background-attachment: fixed;
   background-position: right top;
   background-size: 50%;
 }
-.summary p:last-of-type {
-  display: none;
-}
 
-.preamble {
+#zen-preamble {
   background: url("assets/mars.svg") no-repeat center;
   background-attachment: fixed;
   background-position: left top;
   background-size: 50%;
 }
 
-.explanation {
+#zen-explanation {
   background: url("assets/jupiter.svg") no-repeat center;
   background-attachment: fixed;
   background-position: right top;
   background-size: 60%;
 }
 
-.participation {
+#zen-participation {
   background: url("assets/saturn.svg") no-repeat center;
   background-attachment: fixed;
   background-position: left top;
   background-size: 80%;
 }
 
-.benefits {
+#zen-benefits {
   background: url("assets/uranus.svg") no-repeat center;
   background-attachment: fixed;
   background-position: right top;
   background-size: 50%;
 }
 
-.requirements {
+#zen-requirements {
   background: url("assets/mercury.svg") no-repeat center;
   background-attachment: fixed;
   background-position: left top;
   background-size: 50%;
 }
 
-footer {
-  display: flex;
+#zen-supporting footer {
   flex-direction: row;
   justify-content: space-evenly;
 }
-footer a {
+
+#zen-supporting footer a {
   color: white;
   padding: 3rem;
   background: url("assets/meteor1.svg") no-repeat center;
   background-size: contain;
   text-decoration: none;
 }
-footer a:hover {
+
+#zen-supporting footer a:hover {
   color: white;
   text-decoration: underline;
 }
 
-.design-selection {
-  display: flex;
-  align-content: center;
-}
-.design-selection h3 {
+#design-selection h3 {
   align-self: center;
   background: url("assets/meteor1.svg") no-repeat center;
   background-size: contain;
   padding: 50px;
 }
-.design-selection ul {
+
+#design-selection ul {
   display: flex;
   flex-direction: row;
   align-content: center;
   flex-wrap: wrap;
 }
-.design-selection li {
+
+#design-selection li {
   margin: 1rem;
   list-style: none;
 }
-.design-selection li a {
+
+#design-selection li a {
   color: white;
 }
-.design-selection li:nth-child(1) {
+
+#design-selection li:nth-child(1) {
   background: url("assets/meteor1.svg") no-repeat center;
   background-size: contain;
   padding: 50px;
 }
-.design-selection li:nth-child(2) {
-  background: url("assets/meteor2.svg") no-repeat center;
-  background-size: contain;
-  padding: 50px;
-}
-.design-selection li:nth-child(3) {
-  background: url("assets/meteor3.svg") no-repeat center;
-  background-size: contain;
-  padding: 50px;
-}
-.design-selection li:nth-child(4) {
-  background: url("assets/meteor4.svg") no-repeat center;
-  background-size: contain;
-  padding: 50px;
-}
-.design-selection li:nth-child(5) {
-  background: url("assets/meteor5.svg") no-repeat center;
-  background-size: contain;
-  padding: 50px;
-}
-.design-selection li:nth-child(6) {
-  background: url("assets/meteor6.svg") no-repeat center;
-  background-size: contain;
-  padding: 50px;
-}
-.design-selection li:nth-child(7) {
-  background: url("assets/meteor1.svg") no-repeat center;
-  background-size: contain;
-  padding: 50px;
-}
-.design-selection li:nth-child(8) {
+
+#design-selection li:nth-child(2) {
   background: url("assets/meteor2.svg") no-repeat center;
   background-size: contain;
   padding: 50px;
 }
 
-.zen-resources {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+#design-selection li:nth-child(3) {
+  background: url("assets/meteor3.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
 }
-.zen-resources ul {
+
+#design-selection li:nth-child(4) {
+  background: url("assets/meteor4.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
+}
+
+#design-selection li:nth-child(5) {
+  background: url("assets/meteor5.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
+}
+
+#design-selection li:nth-child(6) {
+  background: url("assets/meteor6.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
+}
+
+#design-selection li:nth-child(7) {
+  background: url("assets/meteor1.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
+}
+
+#design-selection li:nth-child(8) {
+  background: url("assets/meteor2.svg") no-repeat center;
+  background-size: contain;
+  padding: 50px;
+}
+
+#zen-resources ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -583,7 +416,8 @@ footer a:hover {
   justify-content: center;
   list-style: none;
 }
-.zen-resources ul li {
+
+#zen-resources ul li {
   background-color: black;
   background: url("assets/star.svg") no-repeat center;
   background-size: contain;
@@ -600,6 +434,7 @@ footer a:hover {
   background: url("assets/rocketship.svg");
   background-size: cover;
   transform: rotate(192deg);
+  z-index: -1;
 }
 
 .extra1 {

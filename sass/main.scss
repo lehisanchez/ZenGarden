@@ -1,14 +1,8 @@
-// INITIAL STYLES
-@use 'normalize';
+@use 'reset';
 @use 'typography';
+// @use 'globals';
 @use 'colors';
-
-// LAYOUT
 @use 'layout';
 @use 'panels';
-
-// ROCKET
-@use 'rocket';
-
-// ANIMATION
-@use 'animation';
+@use 'extras';
+@use 'animations';
