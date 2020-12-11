@@ -123,25 +123,25 @@
 // MEDIUM SCREEN
 // ---------------------------------------------
 // ---------------------------------------------
-@media (min-width: 800px) {
+@media (min-width: 800px) {  // possible variable??? 
 
   @keyframes meteor {
     from {
-      margin-left: -800px;
+      margin-left: -800px;// possible variable??? 
     }
 
     to {
-      margin-left: 800px
+      margin-left: 800px// possible variable??? 
     }
   }
 
   @keyframes meteor1 {
     from {
-      left: -70vw;
+      left: -70vw;// possible variable??? 
     }
 
     to {
-      left: 70vw;
+      left: 70vw;// possible variable??? 
     }
   }
 
@@ -154,35 +154,35 @@
 @media (min-width: 1100px) {
 
   #design-selection li:nth-child(1) {
-    animation: meteor1 23s ease-in infinite;
+    animation: meteor1 23s ease-in infinite; // possible mixin??? 
   }
 
   #design-selection li:nth-child(2) {
-    animation: meteor1 30s ease-out infinite;
+    animation: meteor1 30s ease-out infinite; // possible mixin??? 
   }
 
   #design-selection li:nth-child(3) {
-    animation: meteor1 32s ease-in-out infinite;
+    animation: meteor1 32s ease-in-out infinite; // possible mixin??? 
   }
 
   #design-selection li:nth-child(4) {
-    animation: meteor1 36s ease infinite;
+    animation: meteor1 36s ease infinite; // possible mixin??? 
   }
 
   #design-selection li:nth-child(5) {
-    animation: meteor1 38s ease-in infinite;
+    animation: meteor1 38s ease-in infinite; // possible mixin??? 
   }
 
   #design-selection li:nth-child(6) {
-    animation: meteor1 31s ease-out infinite;
+    animation: meteor1 31s ease-out infinite; // possible mixin??? 
   }
 
   #design-selection li:nth-child(7) {
-    animation: meteor1 34s ease-in-out infinite;
+    animation: meteor1 34s ease-in-out infinite; // possible mixin??? 
   }
 
   #design-selection li:nth-child(8) {
-    animation: meteor1 33s ease infinite;
+    animation: meteor1 33s ease infinite; // possible mixin??? 
   }
 
   @keyframes meteor {

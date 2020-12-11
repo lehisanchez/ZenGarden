@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@400;500;700;900&display=swap');
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; // SASS: possible variable
 }
 
 h1,
@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif; // SASS: possible variable
     font-weight: bold;
     text-align: center;
     letter-spacing: .05em;
