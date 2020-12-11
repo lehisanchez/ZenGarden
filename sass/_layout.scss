@@ -34,21 +34,23 @@ div>p:last-of-type {
 
 
 
-/// PANELS PARENT WRAPPER
-/// --------------------------------------
+// PAGE WRAPPER
+// ---------------------------------------------
+// ---------------------------------------------
 .page-wrapper {
     display: flex;
     flex-direction: column;
     position: inherit;
     height: 100vh;
     overflow-y: scroll;
-    // scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
 }
 
 
 
-/// INDIVIDUAL PANELS
-/// --------------------------------------
+// GLOBAL PANEL RULES
+// ---------------------------------------------
+// ---------------------------------------------
 #zen-intro header,
 #zen-summary,
 #zen-preamble,
@@ -103,7 +105,7 @@ PANELS:
     background-position: center 75vh;
     background-size: cover;
     z-index: -2;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 #zen-intro header h1 {
@@ -129,15 +131,7 @@ PANELS:
     background-attachment: fixed;
     background-position: right top;
     background-size: 50%;
-    // z-index: -5;
     // display: none; /// REMOVE THIS AFTER TESTING
-    // background: url("assets/moon.svg") no-repeat;
-    // background-size: 40%;
-    // background-attachment: fixed;
-    // background-position: 98% 6%;
-    // background-repeat: no-repeat;
-    // animation: CenterFlyby 5s ease-in-out infinite;
-    display: none; /// REMOVE THIS AFTER TESTING
 }
 
 
@@ -151,7 +145,7 @@ PANELS:
     background-attachment: fixed;
     background-position: left top;
     background-size: 50%;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 
@@ -163,7 +157,7 @@ PANELS:
     background-attachment: fixed;
     background-position: right top;
     background-size: 50%;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 
@@ -175,7 +169,7 @@ PANELS:
     background-attachment: fixed;
     background-position: left top;
     background-size: 50%;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 
@@ -187,18 +181,19 @@ PANELS:
     background-attachment: fixed;
     background-position: right top;
     background-size: 50%;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 // PANEL 7 - ZEN REQUIREMENTS
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-requirements {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url("assets/uranus.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 40%;
     z-index: 5;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 #zen-requirements h3,
@@ -211,12 +206,10 @@ PANELS:
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-supporting footer {
+    position: relative;
+    align-content: center;
     justify-content: space-evenly;
-    background: url("assets/uranus.svg") no-repeat center;
-    background-attachment: fixed;
-    background-position: left top;
-    background-size: 40%;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 #zen-supporting footer a {
@@ -234,34 +227,35 @@ PANELS:
 
 
 // PANEL 9 - DESIGN SELECTION
+
 // ---------------------------------------------
 // ---------------------------------------------
 #design-selection {
+    position: relative;
     justify-content: space-evenly;
     z-index: 1;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
 #design-selection h3 {
     font-size: 2em;
-    grid-row: 1;
 }
 
-#design-selection ul {
-    height: 100%;
-}
+#design-selection ul {}
 
 #design-selection li {
-    margin-bottom: 1rem;
-    font-size: .8em;
-    list-style: none;
-    cursor: pointer;
+    position: relative;
+    background: url("assets/meteor1.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
 }
 
 #design-selection li a {
     padding: 5px;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
+    background-size: contain;
+    text-decoration: none;
 }
 
 #design-selection li:nth-child(1) {
@@ -351,4 +345,27 @@ PANELS:
 #zen-resources ul li a {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+// MEDIUM SCREEN
+// ---------------------------------------------
+// ---------------------------------------------
+@media (min-width: 800px) {
+    p {
+        max-width: 700px;
+    }
+}
+
+// LARGE SCREEN
+// ---------------------------------------------
+// ---------------------------------------------
+@media (min-width: 1100px) {
+    p {
+        max-width: 1000px;
+    }
+
+    #zen-resources ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }

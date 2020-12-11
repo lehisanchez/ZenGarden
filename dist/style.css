@@ -184,6 +184,22 @@ p {
   font-size: 1.3em;
 }
 
+#zen-resources {
+  line-height: 2em;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 1em;
+    line-height: 1.7em;
+  }
+}
+@media (min-width: 1100px) {
+  p {
+    font-size: 1.3em;
+    line-height: 1.7em;
+  }
+}
 * {
   color: white;
 }
@@ -249,6 +265,7 @@ div > p:last-of-type {
   position: inherit;
   height: 100vh;
   overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 #zen-intro header,
@@ -299,7 +316,6 @@ PANELS:
   background-position: center 75vh;
   background-size: cover;
   z-index: -2;
-  display: none;
 }
 
 #zen-intro header h1 {
@@ -321,7 +337,6 @@ PANELS:
   background-attachment: fixed;
   background-position: right top;
   background-size: 50%;
-  display: none;
 }
 
 #zen-preamble {
@@ -329,7 +344,6 @@ PANELS:
   background-attachment: fixed;
   background-position: left top;
   background-size: 50%;
-  display: none;
 }
 
 #zen-explanation {
@@ -337,7 +351,6 @@ PANELS:
   background-attachment: fixed;
   background-position: right top;
   background-size: 50%;
-  display: none;
 }
 
 #zen-participation {
@@ -345,7 +358,6 @@ PANELS:
   background-attachment: fixed;
   background-position: left top;
   background-size: 50%;
-  display: none;
 }
 
 #zen-benefits {
@@ -353,15 +365,14 @@ PANELS:
   background-attachment: fixed;
   background-position: right top;
   background-size: 50%;
-  display: none;
 }
 
 #zen-requirements {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: url("assets/uranus.svg") no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 40%;
   z-index: 5;
-  display: none;
 }
 
 #zen-requirements h3,
@@ -370,12 +381,9 @@ PANELS:
 }
 
 #zen-supporting footer {
+  position: relative;
+  align-content: center;
   justify-content: space-evenly;
-  background: url("assets/uranus.svg") no-repeat center;
-  background-attachment: fixed;
-  background-position: left top;
-  background-size: 40%;
-  display: none;
 }
 
 #zen-supporting footer a {
@@ -392,31 +400,28 @@ PANELS:
 }
 
 #design-selection {
+  position: relative;
   justify-content: space-evenly;
   z-index: 1;
-  display: none;
 }
 
 #design-selection h3 {
   font-size: 2em;
-  grid-row: 1;
-}
-
-#design-selection ul {
-  height: 100%;
 }
 
 #design-selection li {
-  margin-bottom: 1rem;
-  font-size: 0.8em;
-  list-style: none;
-  cursor: pointer;
+  position: relative;
+  background: url("assets/meteor1.svg") no-repeat center;
+  background-size: contain;
+  padding: 20px;
 }
 
 #design-selection li a {
   padding: 5px;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
+  background-size: contain;
+  text-decoration: none;
 }
 
 #design-selection li:nth-child(1) {
@@ -501,6 +506,21 @@ PANELS:
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media (min-width: 800px) {
+  p {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1100px) {
+  p {
+    max-width: 1000px;
+  }
+
+  #zen-resources ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .extra1 {
   position: fixed;
   right: 10%;
@@ -512,6 +532,175 @@ PANELS:
   background-repeat: no-repeat;
   transform: rotate(192deg);
   z-index: 0;
+}
+
+.extra1 {
+  animation: pulse 0.5s linear infinite alternate;
+}
+
+#zen-supporting footer a {
+  animation-play-state: running;
+}
+
+#zen-supporting footer a:nth-child(1) {
+  animation: meteor 10s ease infinite alternate;
+}
+
+#zen-supporting footer a:nth-child(2) {
+  animation: meteor 9s linear infinite alternate;
+}
+
+#zen-supporting footer a:nth-child(3) {
+  animation: meteor 7s ease-in infinite alternate;
+}
+
+#zen-supporting footer a:nth-child(4) {
+  animation: meteor 10s ease-in infinite alternate;
+}
+
+#zen-supporting footer a:nth-child(5) {
+  animation: meteor 15s ease-out infinite alternate;
+}
+
+#zen-supporting footer a:hover {
+  animation-play-state: paused;
+}
+
+#design-selection li {
+  animation-play-state: running;
+}
+
+#design-selection li:nth-child(1) {
+  animation: meteor1 15s ease-in infinite;
+}
+
+#design-selection li:nth-child(2) {
+  animation: meteor1 10s ease-out infinite;
+}
+
+#design-selection li:nth-child(3) {
+  animation: meteor1 12s ease-in-out infinite;
+}
+
+#design-selection li:nth-child(4) {
+  animation: meteor1 16s ease infinite;
+}
+
+#design-selection li:nth-child(5) {
+  animation: meteor1 18s ease-in infinite;
+}
+
+#design-selection li:nth-child(6) {
+  animation: meteor1 11s ease-out infinite;
+}
+
+#design-selection li:nth-child(7) {
+  animation: meteor1 14s ease-in-out infinite;
+}
+
+#design-selection li:nth-child(8) {
+  animation: meteor1 13s ease infinite;
+}
+
+#design-selection li:hover {
+  animation-play-state: paused;
+}
+
+@keyframes pulse {
+  0% {
+    width: 100px;
+    transform: rotate(192deg);
+  }
+  100% {
+    width: 102px;
+    transform: rotate(195deg);
+  }
+}
+@keyframes meteor {
+  from {
+    margin-top: -50px;
+    margin-left: -700px;
+  }
+  to {
+    margin-top: 50px;
+    margin-left: 700px;
+  }
+}
+@keyframes meteor1 {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 100vw;
+  }
+}
+@media (min-width: 800px) {
+  @keyframes meteor {
+    from {
+      margin-left: -800px;
+    }
+    to {
+      margin-left: 800px;
+    }
+  }
+  @keyframes meteor1 {
+    from {
+      left: -70vw;
+    }
+    to {
+      left: 70vw;
+    }
+  }
+}
+@media (min-width: 1100px) {
+  #design-selection li:nth-child(1) {
+    animation: meteor1 23s ease-in infinite;
+  }
+
+  #design-selection li:nth-child(2) {
+    animation: meteor1 30s ease-out infinite;
+  }
+
+  #design-selection li:nth-child(3) {
+    animation: meteor1 32s ease-in-out infinite;
+  }
+
+  #design-selection li:nth-child(4) {
+    animation: meteor1 36s ease infinite;
+  }
+
+  #design-selection li:nth-child(5) {
+    animation: meteor1 38s ease-in infinite;
+  }
+
+  #design-selection li:nth-child(6) {
+    animation: meteor1 31s ease-out infinite;
+  }
+
+  #design-selection li:nth-child(7) {
+    animation: meteor1 34s ease-in-out infinite;
+  }
+
+  #design-selection li:nth-child(8) {
+    animation: meteor1 33s ease infinite;
+  }
+
+  @keyframes meteor {
+    from {
+      margin-left: -1100px;
+    }
+    to {
+      margin-left: 1100px;
+    }
+  }
+  @keyframes meteor1 {
+    from {
+      left: -80vw;
+    }
+    to {
+      left: 80vw;
+    }
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
