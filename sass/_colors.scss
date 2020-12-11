@@ -1,5 +1,6 @@
-/// APPLY COLOR SCHEME TO HTML ELEMENTS
-
+// COLOR VARIABLES
+// ---------------------------------------------
+// ---------------------------------------------
 $purple-100: #E8C1C5;
 $purple-200: #D499B9;
 $purple-300: #9055A2;
@@ -11,15 +12,16 @@ $purple-500: #011638;
 }
 
 p {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 a {
-    color: $purple-300;
+    font-weight: semibold;
+    color: $purple-200;
 }
 
 a:hover {
-    color: $purple-200;
+    color: $purple-100;
 }
 
 .summary {

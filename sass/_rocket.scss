@@ -1,12 +1,15 @@
+// ROCKET
+// ---------------------------------------------
+// ---------------------------------------------
 .extra1 {
     position: fixed;
     right: 10%;
     top: 15%;
-    height: 175px;
-    width: 100px;
+    width: 80px;
+    height: 150px;
     background: url("assets/rocketship.svg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     transform: rotate(192deg);
+    z-index: 0;
 }
-
-

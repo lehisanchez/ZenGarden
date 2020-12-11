@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@400;500;700;900&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -11,9 +11,63 @@ h4,
 h5,
 h6 {
     font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
     letter-spacing: .05em;
+    line-height: 1em;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: -.05em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 2.5em;
 }
 
 p {
+    font-size: .9em;
+    text-indent: 1em;
+    line-height: 1.2em;
+}
+
+#zen-intro header h1 {
+    margin: 0;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+#zen-intro header h2 {
+    font-size: 1.3em;
+}
+
+#zen-resources {
     line-height: 2em;
+}
+
+
+// MEDIUM SCREEN
+// ---------------------------------------------
+// ---------------------------------------------
+@media (min-width: 800px) {
+    p {
+        font-size: 1em;
+        line-height: 1.7em;
+    }
+}
+
+
+// LARGE SCREEN
+// ---------------------------------------------
+// ---------------------------------------------
+@media (min-width: 1100px) {
+    p {
+        font-size: 1.3em;
+        line-height: 1.7em;
+    }
 }
