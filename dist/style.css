@@ -134,6 +134,10 @@ table {
   border-spacing: 0;
 }
 
+abbr {
+  text-decoration: none;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -146,27 +150,38 @@ h5,
 h6 {
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
+  text-align: center;
   letter-spacing: 0.05em;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 
 h1 {
   font-size: 4em;
+  letter-spacing: -0.05em;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 1.7em;
 }
 
 h3 {
-  font-size: 2em;
-  margin-top: 50px;
+  font-size: 2.5em;
 }
 
 p {
   font-size: 0.9em;
   text-indent: 1em;
-  line-height: 1.7em;
+  line-height: 1.2em;
+}
+
+#zen-intro header h1 {
+  margin: 0;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#zen-intro header h2 {
+  font-size: 1.3em;
 }
 
 * {
@@ -174,7 +189,7 @@ p {
 }
 
 p {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 a {
@@ -204,23 +219,36 @@ body {
   transform: rotate(-180deg);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
 p {
-  padding: 0 3rem 0 3rem;
+  width: 100%;
+  padding: 0 2rem 0 2rem;
+  text-align: justify;
 }
 
 div > p:first-of-type {
-  padding-top: 3rem;
+  padding-top: 15px;
 }
 
 div > p:last-of-type {
-  padding-bottom: 3rem;
+  padding-bottom: 15px;
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: column;
   position: inherit;
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 }
 
 #zen-intro header,
@@ -238,11 +266,17 @@ div > p:last-of-type {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
   position: relative;
-  height: 120vh;
-  overflow-y: scroll;
+  height: 100vh;
+  padding: 0 15px 0 15px;
+  scroll-snap-align: center;
+  overflow: hidden;
+  scroll-snap-type: y mandatory;
   transform: rotate(-180deg);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*
@@ -265,63 +299,83 @@ PANELS:
   background-position: center 75vh;
   background-size: cover;
   z-index: -2;
+  display: none;
 }
 
 #zen-intro header h1 {
-  text-align: center;
-  padding: 2rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
   background: black;
 }
 
 #zen-intro header h2 {
-  display: none;
+  width: 100%;
+  padding-bottom: 3rem;
+  padding-top: 0;
+  background: black;
 }
 
 #zen-summary {
-  background: url("assets/venus.svg") no-repeat center;
+  background: url("assets/moon.svg") no-repeat;
   background-attachment: fixed;
   background-position: right top;
   background-size: 50%;
+  display: none;
 }
 
 #zen-preamble {
-  background: url("assets/mars.svg") no-repeat center;
+  background: url("assets/mercury.svg") no-repeat;
   background-attachment: fixed;
   background-position: left top;
   background-size: 50%;
+  display: none;
 }
 
 #zen-explanation {
-  background: url("assets/jupiter.svg") no-repeat center;
+  background: url("assets/venus.svg") no-repeat;
   background-attachment: fixed;
   background-position: right top;
-  background-size: 60%;
+  background-size: 50%;
+  display: none;
 }
 
 #zen-participation {
-  background: url("assets/saturn.svg") no-repeat center;
+  background: url("assets/mars.svg") no-repeat;
   background-attachment: fixed;
   background-position: left top;
-  background-size: 80%;
+  background-size: 50%;
+  display: none;
 }
 
 #zen-benefits {
-  background: url("assets/uranus.svg") no-repeat center;
+  background: url("assets/jupiter.svg") no-repeat;
   background-attachment: fixed;
   background-position: right top;
   background-size: 50%;
+  display: none;
 }
 
 #zen-requirements {
-  background: url("assets/mercury.svg") no-repeat center;
-  background-attachment: fixed;
-  background-position: left top;
-  background-size: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  display: none;
+}
+
+#zen-requirements h3,
+#zen-requirements p {
+  z-index: 0;
 }
 
 #zen-supporting footer {
-  flex-direction: row;
   justify-content: space-evenly;
+  background: url("assets/uranus.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 40%;
+  display: none;
 }
 
 #zen-supporting footer a {
@@ -337,119 +391,127 @@ PANELS:
   text-decoration: underline;
 }
 
+#design-selection {
+  justify-content: space-evenly;
+  z-index: 1;
+  display: none;
+}
+
 #design-selection h3 {
-  align-self: center;
-  background: url("assets/meteor1.svg") no-repeat center;
-  background-size: contain;
-  padding: 50px;
+  font-size: 2em;
+  grid-row: 1;
 }
 
 #design-selection ul {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  flex-wrap: wrap;
+  height: 100%;
 }
 
 #design-selection li {
-  margin: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8em;
   list-style: none;
+  cursor: pointer;
 }
 
 #design-selection li a {
+  padding: 5px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 #design-selection li:nth-child(1) {
   background: url("assets/meteor1.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
 }
 
 #design-selection li:nth-child(2) {
   background: url("assets/meteor2.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
 }
 
 #design-selection li:nth-child(3) {
   background: url("assets/meteor3.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
 }
 
 #design-selection li:nth-child(4) {
   background: url("assets/meteor4.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
 }
 
 #design-selection li:nth-child(5) {
   background: url("assets/meteor5.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
 }
 
 #design-selection li:nth-child(6) {
   background: url("assets/meteor6.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
 }
 
 #design-selection li:nth-child(7) {
   background: url("assets/meteor1.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
 }
 
 #design-selection li:nth-child(8) {
   background: url("assets/meteor2.svg") no-repeat center;
   background-size: contain;
-  padding: 50px;
+  padding: 20px;
+}
+
+#design-archives {
+  background: url("assets/neptune.svg") no-repeat center;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 40%;
+  z-index: -5;
+  display: none;
+}
+
+#zen-resources {
+  justify-content: space-evenly;
 }
 
 #zen-resources ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   list-style: none;
+  text-align: center;
 }
 
 #zen-resources ul li {
-  background-color: black;
   background: url("assets/star.svg") no-repeat center;
   background-size: contain;
   padding: 50px;
   text-decoration: none;
 }
 
+#zen-resources ul li a {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .extra1 {
   position: fixed;
   right: 10%;
   top: 15%;
-  height: 175px;
-  width: 100px;
+  width: 80px;
+  height: 150px;
   background: url("assets/rocketship.svg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   transform: rotate(192deg);
-  z-index: -1;
-}
-
-.extra1 {
-  animation: pulse 0.5s linear infinite alternate;
-}
-
-@keyframes pulse {
-  0% {
-    width: 100px;
-    transform: rotate(192deg);
-  }
-  100% {
-    width: 102px;
-    transform: rotate(195deg);
-  }
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

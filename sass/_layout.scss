@@ -8,25 +8,347 @@ body {
     transform: rotate(-180deg);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
 p {
-    // max-width: 600px;
-    padding: 0 3rem 0 3rem;
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+    text-align: justify;
 }
 
 div>p:first-of-type {
-    padding-top: 3rem;
+    padding-top: 15px;
 }
 
 div>p:last-of-type {
-    padding-bottom: 3rem;
+    padding-bottom: 15px;
 }
 
-// #zen-intro,
-// #zen-summary,
-// #zen-preamble,
-// #zen-explanation,
-// #zen-participation,
-// #zen-benefits,
-// #zen-requirements {
-//     display: none;
-// }
+
+
+/// PANELS PARENT WRAPPER
+/// --------------------------------------
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    height: 100vh;
+    overflow-y: scroll;
+    // scroll-snap-type: y mandatory;
+}
+
+
+
+/// INDIVIDUAL PANELS
+/// --------------------------------------
+#zen-intro header,
+#zen-summary,
+#zen-preamble,
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
+#zen-requirements,
+#zen-supporting footer,
+#design-selection,
+#design-archives,
+#zen-resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    padding: 0 15px 0 15px;
+    scroll-snap-align: center;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+    transform: rotate(-180deg);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*
+PANELS:
+01 #zen-intro header,
+02 #zen-summary,
+03 #zen-preamble,
+04 #zen-explanation,
+05 #zen-participation,
+06 #zen-benefits,
+07 #zen-requirements,
+08 #zen-supporting footer,
+09 #design-selection,
+10 #design-archives,
+11 #zen-resources
+*/
+
+
+// PANEL 1 - ZEN INTRO
+// ---------------------------------------------
+// ---------------------------------------------
+
+#zen-intro header {
+    background: url(assets/earth.svg) no-repeat;
+    background-attachment: fixed;
+    background-position: center 75vh;
+    background-size: cover;
+    z-index: -2;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+#zen-intro header h1 {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    background: black;
+}
+
+#zen-intro header h2 {
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 0;
+    background: black;
+}
+
+
+// PANEL 2 - ZEN SUMMARY
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-summary {
+    background: url("assets/moon.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 50%;
+    // z-index: -5;
+    // display: none; /// REMOVE THIS AFTER TESTING
+    // background: url("assets/moon.svg") no-repeat;
+    // background-size: 40%;
+    // background-attachment: fixed;
+    // background-position: 98% 6%;
+    // background-repeat: no-repeat;
+    // animation: CenterFlyby 5s ease-in-out infinite;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+
+
+
+// PANEL 3 - ZEN PREAMBLE
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-preamble {
+    background: url("assets/mercury.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 50%;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+
+// PANEL 4 - ZEN EXPLANATION
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-explanation {
+    background: url("assets/venus.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 50%;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+
+// PANEL 5 - ZEN PARTICIPATION
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-participation {
+    background: url("assets/mars.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 50%;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+
+// PANEL 6 - ZEN BENEFITS
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-benefits {
+    background: url("assets/jupiter.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 50%;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+// PANEL 7 - ZEN REQUIREMENTS
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-requirements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+#zen-requirements h3,
+#zen-requirements p {
+    z-index: 0;
+}
+
+
+// PANEL 8 - ZEN SUPPORTING FOOTER
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-supporting footer {
+    justify-content: space-evenly;
+    background: url("assets/uranus.svg") no-repeat center;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 40%;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+#zen-supporting footer a {
+    color: white;
+    padding: 3rem;
+    background: url("assets/meteor1.svg") no-repeat center;
+    background-size: contain;
+    text-decoration: none;
+}
+
+#zen-supporting footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+// PANEL 9 - DESIGN SELECTION
+// ---------------------------------------------
+// ---------------------------------------------
+#design-selection {
+    justify-content: space-evenly;
+    z-index: 1;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+#design-selection h3 {
+    font-size: 2em;
+    grid-row: 1;
+}
+
+#design-selection ul {
+    height: 100%;
+}
+
+#design-selection li {
+    margin-bottom: 1rem;
+    font-size: .8em;
+    list-style: none;
+    cursor: pointer;
+}
+
+#design-selection li a {
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#design-selection li:nth-child(1) {
+    background: url("assets/meteor1.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+#design-selection li:nth-child(2) {
+    background: url("assets/meteor2.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+#design-selection li:nth-child(3) {
+    background: url("assets/meteor3.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+#design-selection li:nth-child(4) {
+    background: url("assets/meteor4.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+#design-selection li:nth-child(5) {
+    background: url("assets/meteor5.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+#design-selection li:nth-child(6) {
+    background: url("assets/meteor6.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+#design-selection li:nth-child(7) {
+    background: url("assets/meteor1.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+#design-selection li:nth-child(8) {
+    background: url("assets/meteor2.svg") no-repeat center;
+    background-size: contain;
+    padding: 20px;
+}
+
+// PANEL 10 - DESIGN ARCHIVES
+// ---------------------------------------------
+// ---------------------------------------------
+#design-archives {
+    background: url("assets/neptune.svg") no-repeat center;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 40%;
+    z-index: -5;
+    display: none; /// REMOVE THIS AFTER TESTING
+}
+
+
+// PANEL 11 - ZEN RESOURCES
+// ---------------------------------------------
+// ---------------------------------------------
+#zen-resources {
+    justify-content: space-evenly;
+}
+
+#zen-resources ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+#zen-resources ul li {
+    background: url("assets/star.svg") no-repeat center;
+    background-size: contain;
+    padding: 50px;
+    text-decoration: none;
+}
+
+#zen-resources ul li a {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}

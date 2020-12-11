@@ -12,25 +12,36 @@ h5,
 h6 {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
+    text-align: center;
     letter-spacing: .05em;
-    line-height: 1.5em;
+    line-height: 1em;
 }
 
 h1 {
     font-size: 4em;
+    letter-spacing: -.05em;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 1.7em;
 }
 
 h3 {
-    font-size: 2em;
-    margin-top: 50px;
+    font-size: 2.5em;
 }
 
 p {
     font-size: .9em;
     text-indent: 1em;
-    line-height: 1.7em;
+    line-height: 1.2em;
+}
+
+#zen-intro header h1 {
+    margin: 0;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+#zen-intro header h2 {
+    font-size: 1.3em;
 }

@@ -3,54 +3,134 @@
 // ROCKET
 
 .extra1 {
-    animation: pulse .5s linear infinite alternate;
-  }
-  
-  @keyframes pulse {
-    0% {
-        width: 100px;
-        transform: rotate(192deg);
-    }
-    100% {
-        width: 102px;
-        transform: rotate(195deg);
-    }
+  animation: pulse .5s linear infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    width: 100px;
+    transform: rotate(192deg);
   }
 
+  100% {
+    width: 102px;
+    transform: rotate(195deg);
+  }
+}
 
-// .design-selection nav ul li {
-//     height: 100px;
-//     width: 100px;
-//     background-color: red;
-//     animation: 
-//     //   pulse 3s ease infinite alternate, 
-//       nudge 10s linear infinite alternate;
-//     animation-play-state: running;
-//   }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
 
-//   .design-selection nav ul li:hover {
-//     animation-play-state: paused;
-//   }
-  
-// //   @keyframes pulse {
-// //     0%, 100% {
-// //       background-color: red;
-// //     }
-// //     50% {
-// //       background-color: orange;
-// //     }
-// //   }
-  
-//   @keyframes nudge {
-//     0%, 100% {
-//       transform: translate(0, 0);
-//     }
-    
-//     50% {
-//       transform: translate(100vh, 0);
-//     }
-    
-//     80% {
-//       transform: translate(0, 0);
-//     }
-//   }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// #zen-intro header::before {
+//   content: "";
+//   z-index: -1;
+//   background: url(assets/earth.svg) no-repeat;
+//   animation-name: rotate;
+//   animation-duration: 500s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+//   background-color: red;
+// }
+
+@keyframes CenterFlyby {
+  0% {
+    background-size: 0%;
+    background-position: 50% 10%;
+  }
+
+  50% {
+    background-size: 60%;
+    background-position: 60% 50%;
+  }
+
+  100% {
+    background-size: 0%;
+    background-position: 50% 90%;
+  }
+}
+
+
+@keyframes RightFlyby {
+  0% {
+    background-size: 0%;
+    background-position: 100% 10%;
+  }
+
+  50% {
+    background-size: 50%;
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-size: 0%;
+    background-position: 0% 90%;
+  }
+}
+
+@keyframes LeftFlyby {
+  0% {
+    background-size: 0%;
+    background-position: 0% 10%;
+  }
+
+  50% {
+    background-size: 50%;
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-size: 0%;
+    background-position: 100% 90%;
+  }
+}
+
+@keyframes SaturnFlyby {
+  0% {
+    background-size: 0%;
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-size: 90%;
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-size: 100%;
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes BlastOff {
+  0% {
+    background-position: center 100%;
+    background-size: 100%;
+  }
+
+  5% {
+    // background-position: center 75vh;
+    background-size: 200%;
+  }
+
+  10% {
+    background-size: 50%;
+  }
+
+  100% {
+    background-position: center 80vh;
+    background-size: 0%;
+  }
+
+  // 100% {}
+}
