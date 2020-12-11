@@ -4,3 +4,62 @@
 @use 'layout';
 @use 'rocket';
 @use 'animations';
+
+
+/*
+PANELS:
+01 #zen-intro header,
+02 #zen-summary,
+03 #zen-preamble,
+04 #zen-explanation,
+05 #zen-participation,
+06 #zen-benefits,
+07 #zen-requirements,
+08 #zen-supporting footer,
+09 #design-selection,
+10 #design-archives,
+11 #zen-resources
+*/
+
+// #zen-intro header {
+//     background: url("assets/earth.svg") no-repeat;
+// }
+
+// #zen-summary {
+//     background: url("assets/moon.svg") no-repeat;
+// }
+
+// #zen-preamble {
+//     background: url("assets/mercury.svg") no-repeat;
+// }
+
+// #zen-explanation {
+//     background: url("assets/venus.svg") no-repeat;
+// }
+
+// #zen-participation {
+//     background: url("assets/mars.svg") no-repeat;
+// }
+
+// #zen-benefits {
+//     background: url("assets/jupiter.svg") no-repeat;
+// }
+
+// #zen-requirements {
+//     background: url("assets/uranus.svg") no-repeat;
+// }
+
+// // BIG ASTEROID FIELD
+// #zen-supporting footer {}
+
+// // SMALL ASTEROID FIELD
+// #design-selection {}
+
+// #design-archives {
+//     background: url("assets/neptune.svg") no-repeat center;
+// }
+
+// // STARS
+// #zen-resources {
+//     justify-content: space-evenly;
+// }

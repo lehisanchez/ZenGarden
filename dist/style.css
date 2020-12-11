@@ -310,6 +310,15 @@ PANELS:
 10 #design-archives,
 11 #zen-resources
 */
+/*
+
+    possible mixin oppurtunity:
+    All these panels share the same code (almost all of them)
+    we could possible create a mixin where we pass in the name
+    of the planet and then inside the mixin use the planet's name
+    to fill in the image url path.
+
+*/
 #zen-intro header {
   background: url(assets/earth.svg) no-repeat;
   background-attachment: fixed;
@@ -478,7 +487,10 @@ PANELS:
   background-position: left top;
   background-size: 40%;
   z-index: -5;
-  display: none;
+}
+
+#design-archives ul li {
+  padding: 20px;
 }
 
 #zen-resources {
@@ -702,5 +714,19 @@ PANELS:
     }
   }
 }
+/*
+PANELS:
+01 #zen-intro header,
+02 #zen-summary,
+03 #zen-preamble,
+04 #zen-explanation,
+05 #zen-participation,
+06 #zen-benefits,
+07 #zen-requirements,
+08 #zen-supporting footer,
+09 #design-selection,
+10 #design-archives,
+11 #zen-resources
+*/
 
 /*# sourceMappingURL=style.css.map */

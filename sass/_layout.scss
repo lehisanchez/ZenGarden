@@ -94,6 +94,16 @@ PANELS:
 11 #zen-resources
 */
 
+/*
+
+    possible mixin oppurtunity:
+    All these panels share the same code (almost all of them)
+    we could possible create a mixin where we pass in the name
+    of the planet and then inside the mixin use the planet's name
+    to fill in the image url path.
+
+*/
+
 
 // PANEL 1 - ZEN INTRO
 // ---------------------------------------------
@@ -108,6 +118,7 @@ PANELS:
     // display: none; /// REMOVE THIS AFTER TESTING
 }
 
+// THIS CAN BE NESTED
 #zen-intro header h1 {
     width: 100%;
     padding-top: 2rem;
@@ -115,6 +126,7 @@ PANELS:
     background: black;
 }
 
+// THIS CAN BE NESTED
 #zen-intro header h2 {
     width: 100%;
     padding-bottom: 3rem;
@@ -196,6 +208,7 @@ PANELS:
     // display: none; /// REMOVE THIS AFTER TESTING
 }
 
+// THIS CAN BE NESTED
 #zen-requirements h3,
 #zen-requirements p {
     z-index: 0;
@@ -212,6 +225,7 @@ PANELS:
     // display: none; /// REMOVE THIS AFTER TESTING
 }
 
+// THIS CAN BE NESTED
 #zen-supporting footer a {
     color: white;
     padding: 3rem;
@@ -220,6 +234,7 @@ PANELS:
     text-decoration: none;
 }
 
+// THIS CAN BE NESTED
 #zen-supporting footer a:hover {
     color: white;
     text-decoration: underline;
@@ -227,7 +242,6 @@ PANELS:
 
 
 // PANEL 9 - DESIGN SELECTION
-
 // ---------------------------------------------
 // ---------------------------------------------
 #design-selection {
@@ -237,12 +251,15 @@ PANELS:
     // display: none; /// REMOVE THIS AFTER TESTING
 }
 
+// THIS CAN BE NESTED
 #design-selection h3 {
     font-size: 2em;
 }
 
+// THIS CAN BE NESTED
 #design-selection ul {}
 
+// THIS CAN BE NESTED
 #design-selection li {
     position: relative;
     background: url("assets/meteor1.svg") no-repeat center;
@@ -250,6 +267,7 @@ PANELS:
     padding: 20px;
 }
 
+// THIS CAN BE NESTED
 #design-selection li a {
     padding: 5px;
     color: white;
@@ -258,48 +276,57 @@ PANELS:
     text-decoration: none;
 }
 
+
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(1) {
     background: url("assets/meteor1.svg") no-repeat center;
     background-size: contain;
     padding: 20px;
 }
 
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(2) {
     background: url("assets/meteor2.svg") no-repeat center;
     background-size: contain;
     padding: 20px;
 }
 
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(3) {
     background: url("assets/meteor3.svg") no-repeat center;
     background-size: contain;
     padding: 20px;
 }
 
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(4) {
     background: url("assets/meteor4.svg") no-repeat center;
     background-size: contain;
     padding: 20px;
 }
 
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(5) {
     background: url("assets/meteor5.svg") no-repeat center;
     background-size: contain;
     padding: 20px;
 }
 
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(6) {
     background: url("assets/meteor6.svg") no-repeat center;
     background-size: contain;
     padding: 20px;
 }
 
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(7) {
     background: url("assets/meteor1.svg") no-repeat center;
     background-size: contain;
     padding: 20px;
 }
 
+// THESE CAN BE MIXINS ????
 #design-selection li:nth-child(8) {
     background: url("assets/meteor2.svg") no-repeat center;
     background-size: contain;
@@ -315,7 +342,11 @@ PANELS:
     background-position: left top;
     background-size: 40%;
     z-index: -5;
-    display: none; /// REMOVE THIS AFTER TESTING
+    // display: none; /// REMOVE THIS AFTER TESTING
+}
+
+#design-archives ul li {
+    padding: 20px;
 }
 
 
@@ -326,6 +357,8 @@ PANELS:
     justify-content: space-evenly;
 }
 
+
+// THIS CAN BE NESTED
 #zen-resources ul {
     display: flex;
     flex-direction: column;
@@ -335,6 +368,7 @@ PANELS:
     text-align: center;
 }
 
+// THIS CAN BE NESTED
 #zen-resources ul li {
     background: url("assets/star.svg") no-repeat center;
     background-size: contain;
@@ -342,6 +376,7 @@ PANELS:
     text-decoration: none;
 }
 
+// THIS CAN BE NESTED
 #zen-resources ul li a {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.8);
