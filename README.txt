@@ -1,6 +1,4 @@
-Here is the completion of efforts.
-
-The site is fully functional.
+Group 7: Lehi Sanchez and Sylvie Dorsett
 
 
 Walkthrough:
