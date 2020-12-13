@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 html {
     background: url("assets/space_new_180.jpg");
     background-size: cover;
@@ -115,23 +118,18 @@ PANELS:
     background-position: center 75vh;
     background-size: cover;
     z-index: -2;
-    // display: none; /// REMOVE THIS AFTER TESTING
-}
-
-// THIS CAN BE NESTED
-#zen-intro header h1 {
-    width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-    background: black;
-}
-
-// THIS CAN BE NESTED
-#zen-intro header h2 {
-    width: 100%;
-    padding-bottom: 3rem;
-    padding-top: 0;
-    background: black;
+    h1 {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        background: black;
+    }
+    h2 {
+        width: 100%;
+        padding-bottom: 3rem;
+        padding-top: 0;
+        background: black;
+    }
 }
 
 
@@ -139,81 +137,55 @@ PANELS:
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-summary {
-    background: url("assets/moon.svg") no-repeat;
-    background-attachment: fixed;
-    background-position: right top;
-    background-size: 50%;
-    // display: none; /// REMOVE THIS AFTER TESTING
+    @include planetRight("moon");
 }
-
-
-
 
 // PANEL 3 - ZEN PREAMBLE
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-preamble {
-    background: url("assets/mercury.svg") no-repeat;
-    background-attachment: fixed;
-    background-position: left top;
-    background-size: 50%;
-    // display: none; /// REMOVE THIS AFTER TESTING
-}
+    @include planetLeft("mercury");
 
+}
 
 // PANEL 4 - ZEN EXPLANATION
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-explanation {
-    background: url("assets/venus.svg") no-repeat;
-    background-attachment: fixed;
-    background-position: right top;
-    background-size: 50%;
-    // display: none; /// REMOVE THIS AFTER TESTING
+    @include planetRight("venus");
 }
-
 
 // PANEL 5 - ZEN PARTICIPATION
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-participation {
-    background: url("assets/mars.svg") no-repeat;
-    background-attachment: fixed;
-    background-position: left top;
-    background-size: 50%;
-    // display: none; /// REMOVE THIS AFTER TESTING
+    @include planetLeft("mars");
 }
-
 
 // PANEL 6 - ZEN BENEFITS
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-benefits {
-    background: url("assets/jupiter.svg") no-repeat;
-    background-attachment: fixed;
-    background-position: right top;
-    background-size: 50%;
-    // display: none; /// REMOVE THIS AFTER TESTING
+    @include planetRight("jupiter");
 }
 
 // PANEL 7 - ZEN REQUIREMENTS
 // ---------------------------------------------
 // ---------------------------------------------
 #zen-requirements {
-    background: url("assets/uranus.svg") no-repeat;
-    background-attachment: fixed;
-    background-position: left top;
+    @include planetLeft("uranus");
     background-size: 40%;
     z-index: 5;
-    // display: none; /// REMOVE THIS AFTER TESTING
 }
 
-// THIS CAN BE NESTED
-#zen-requirements h3,
-#zen-requirements p {
+#zen-requirements {
+    h3 { 
+    z-index:0;
+    }
+    p {
     z-index: 0;
+    }
 }
-
 
 // PANEL 8 - ZEN SUPPORTING FOOTER
 // ---------------------------------------------
@@ -222,23 +194,19 @@ PANELS:
     position: relative;
     align-content: center;
     justify-content: space-evenly;
-    // display: none; /// REMOVE THIS AFTER TESTING
+    a {
+        color: white;
+        padding: 6rem;
+        background: url("assets/meteor1.svg") no-repeat center;
+        background-size: contain;
+        text-decoration: none;
+    }
+    a:hover {
+            color: white;
+            text-decoration: underline;
+    }
 }
 
-// THIS CAN BE NESTED
-#zen-supporting footer a {
-    color: white;
-    padding: 3rem;
-    background: url("assets/meteor1.svg") no-repeat center;
-    background-size: contain;
-    text-decoration: none;
-}
-
-// THIS CAN BE NESTED
-#zen-supporting footer a:hover {
-    color: white;
-    text-decoration: underline;
-}
 
 
 // PANEL 9 - DESIGN SELECTION
@@ -248,89 +216,49 @@ PANELS:
     position: relative;
     justify-content: space-evenly;
     z-index: 1;
-    // display: none; /// REMOVE THIS AFTER TESTING
+    h3 {
+        font-size: 2em;
+    }
+    ul li{
+        position: relative;
+        background: url("assets/meteor1.svg") no-repeat center;
+        background-size: contain;
+        padding: 4rem;
+        a {
+            padding: 5px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            background-size: contain;
+            text-decoration: none;
+        }
+    }
 }
 
-// THIS CAN BE NESTED
-#design-selection h3 {
-    font-size: 2em;
-}
-
-// THIS CAN BE NESTED
-#design-selection ul {}
-
-// THIS CAN BE NESTED
-#design-selection li {
-    position: relative;
-    background: url("assets/meteor1.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THIS CAN BE NESTED
-#design-selection li a {
-    padding: 5px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-size: contain;
-    text-decoration: none;
-}
-
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(1) {
-    background: url("assets/meteor1.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(2) {
-    background: url("assets/meteor2.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(3) {
-    background: url("assets/meteor3.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(4) {
-    background: url("assets/meteor4.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(5) {
-    background: url("assets/meteor5.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(6) {
-    background: url("assets/meteor6.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(7) {
-    background: url("assets/meteor1.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
-}
-
-// THESE CAN BE MIXINS ????
-#design-selection li:nth-child(8) {
-    background: url("assets/meteor2.svg") no-repeat center;
-    background-size: contain;
-    padding: 20px;
+#design-selection {
+    li:nth-child(1) {
+    @include meteor(1);
+    }
+    li:nth-child(2) {
+    @include meteor(1);
+    }
+    li:nth-child(3) {
+    @include meteor(1);
+    }
+    li:nth-child(4) {
+    @include meteor(1);
+    }
+    li:nth-child(5) {
+    @include meteor(1);
+    }
+    li:nth-child(6) {
+    @include meteor(1);
+    }
+    li:nth-child(7) {
+    @include meteor(1);
+    }
+    li:nth-child(8) {
+    @include meteor(1);
+    }
 }
 
 // PANEL 10 - DESIGN ARCHIVES
@@ -342,13 +270,14 @@ PANELS:
     background-position: left top;
     background-size: 40%;
     z-index: -5;
-    // display: none; /// REMOVE THIS AFTER TESTING
-}
-
-#design-archives ul li {
+    ul li {
     padding: 20px;
+        a {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: .5rem;
+        }
+    }  
 }
-
 
 // PANEL 11 - ZEN RESOURCES
 // ---------------------------------------------
@@ -357,8 +286,6 @@ PANELS:
     justify-content: space-evenly;
 }
 
-
-// THIS CAN BE NESTED
 #zen-resources ul {
     display: flex;
     flex-direction: column;
@@ -366,21 +293,35 @@ PANELS:
     justify-content: center;
     list-style: none;
     text-align: center;
-}
-
-// THIS CAN BE NESTED
-#zen-resources ul li {
-    background: url("assets/star.svg") no-repeat center;
+    li {
+    width: 50px;
+    height: 50px;
+    background: $purple-300;
+    border-radius: 50%;
     background-size: contain;
-    padding: 50px;
+    padding: 5rem;
     text-decoration: none;
+    
+        a {
+        color: white;
+        }
+    }
+    li:nth-of-type(even) {
+        transform: translateX(8rem)
+    }
+
+    li a:nth-of-type(even) {
+        transform: translateX(8rem);
+    }
+    li:nth-of-type(odd) {
+        transform: translateX(-8rem)
+    }
+
+    li a:nth-of-type(odd) {
+        transform: translateX(-8rem);
+    }
 }
 
-// THIS CAN BE NESTED
-#zen-resources ul li a {
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 // MEDIUM SCREEN
 // ---------------------------------------------
@@ -402,5 +343,23 @@ PANELS:
     #zen-resources ul {
         flex-direction: row;
         justify-content: space-evenly;
+        li:nth-of-type(even) {
+            transform: translateX(0);
+            transform: translateY(8rem);
+        }
+    
+        li a:nth-of-type(even) {
+            transform: translateX(0);
+            transform: translateY(8rem);
+        }
+        li:nth-of-type(odd) {
+            transform: translateX(0);
+            transform: translateY(-8rem);
+        }
+    
+        li a:nth-of-type(odd) {
+            transform: translateX(0);
+            transform: translateY(-8rem);
+        }
     }
 }

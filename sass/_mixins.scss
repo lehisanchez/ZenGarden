@@ -1,0 +1,26 @@
+@mixin planetLeft($planetName) {
+    background: url("assets/#{$planetName}.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 50%;
+}
+
+@mixin planetRight($planetName) {
+    background: url("assets/#{$planetName}.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 50%;
+}
+
+@mixin meteor($child-num) {
+    background: url("assets/meteor#{$child-num}.svg") no-repeat center;
+
+}
+
+@mixin meteorAnimate ($seconds, $time) {
+    animation: meteor $seconds $time infinite alternate;
+}
+
+@mixin meteorAnimate-2 ($seconds, $time) {
+    animation: meteor1 $seconds $time infinite;
+}
